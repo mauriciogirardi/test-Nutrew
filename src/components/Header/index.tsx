@@ -14,19 +14,19 @@ export default function Header({ children }) {
 
         <ul>
           <li>
-            <a href="/">Recipes</a>
+            <a href="#recipes">Recipes</a>
           </li>
 
           <li>
-            <a href="/">Go Green</a>
+            <a href="#go-green">Go Green</a>
           </li>
 
           <li>
-            <a href="/">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
 
           <li>
-            <a href="/">How it works</a>
+            <a href="#how-it-works">How it works</a>
           </li>
 
           <li>
