@@ -1,11 +1,11 @@
-import Head from 'next/head'
+import Head from 'next/head';
 
 interface SEOProps {
-  title: string
-  description?: string
-  image?: string
-  shouldExcludeTitleSuffix?: boolean
-  shouldIndexPage?: boolean
+  title: string;
+  description?: string;
+  image?: string;
+  shouldExcludeTitleSuffix?: boolean;
+  shouldIndexPage?: boolean;
 }
 
 export default function SEO({
@@ -17,11 +17,11 @@ export default function SEO({
 }: SEOProps) {
   const pageTitle = `${title} ${
     !shouldExcludeTitleSuffix ? '| DevCommerce' : ''
-  }`
+  }`;
 
   const pageImage = image
     ? `${process.env.NEXT_PUBLIC_SITE_URL}/${image}`
-    : null
+    : null;
 
   return (
     <Head>
@@ -33,8 +33,8 @@ export default function SEO({
       <meta httpEquiv="x-ua-compatible" content="IE=edge,chrome=1" />
       <meta name="MobileOptimized" content="320" />
       <meta name="HandheldFriendly" content="True" />
-      <meta name="theme-color" content="#121214" />
-      <meta name="msapplication-TileColor" content="#121214" />
+      <meta name="theme-color" content="#FFFFFF" />
+      <meta name="msapplication-TileColor" content="#2C3834" />
       <meta name="referrer" content="no-referrer-when-downgrade" />
       <meta name="google" content="notranslate" />
 
@@ -60,5 +60,5 @@ export default function SEO({
       <meta name="twitter:image:width" content="1200" />
       <meta name="twitter:image:height" content="620" />
     </Head>
-  )
+  );
 }

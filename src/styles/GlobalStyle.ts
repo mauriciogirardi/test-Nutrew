@@ -1,6 +1,8 @@
 import { createGlobalStyle } from "styled-components";
 
+
 export default createGlobalStyle`
+
   *{
     margin: 0;
     padding: 0;
@@ -8,14 +10,23 @@ export default createGlobalStyle`
   }
 
   body {
-    background-color: #333;
-    color: #fff;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    color: #2C3835;
   }
 
-  a  {
-    color: #fff;
-    padding: 10px 0;
-    display: block;
+
+  /* font-family: 'DM Serif Display', serif; */
+
+ a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  button {
+    cursor: pointer;
   }
 `;
